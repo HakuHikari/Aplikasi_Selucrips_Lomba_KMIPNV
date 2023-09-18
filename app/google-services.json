@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "152006501504",
+    "project_id": "selu-2f4d2",
+    "storage_bucket": "selu-2f4d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152006501504:android:754e876a408378dc5fb265",
+        "android_client_info": {
+          "package_name": "com.example.selu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152006501504-virrd76ma82mh9laudu63j0svb3ctckj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpoNQ1KDev_DaPx31BcT2GFkeWTPBVnDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152006501504-virrd76ma82mh9laudu63j0svb3ctckj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

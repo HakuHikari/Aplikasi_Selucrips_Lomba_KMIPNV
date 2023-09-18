@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:titleTextColor="@color/black"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/cart"
+        android:title="Cart"
+        android:titleTextColor="@color/black"
+        android:icon="@drawable/cart"/>
+    <item
+        android:id="@+id/note"
+        android:title="Note"
+        android:titleTextColor="@color/black"
+        android:icon="@drawable/note"/>
+
+</menu>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#606C5D"
+    tools:context=".ProfilAdminActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:background="@color/transparant"
+        android:layout_margin="25dp"
+        android:onClick="backToMainActivity"/>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="125dp"
+        android:layout_height="128dp"
+        android:src="@drawable/akun"
+        android:layout_below="@+id/back"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Nama -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/profile"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/white_container"
+        android:layout_width="390dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/name"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/container"
+        android:padding="25dp">
+
+        <ImageView
+            android:id="@+id/icon_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/info" />
+
+        <TextView
+            android:id="@+id/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon_info"
+            android:layout_toEndOf="@id/icon_info"
+            android:text="Info"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/info_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/icon_info"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- Icon dan TextView untuk Logout -->
+        <ImageView
+            android:id="@+id/icon_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_info"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/logout" />
+
+        <TextView
+            android:id="@+id/text_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon_logout"
+            android:layout_toEndOf="@id/icon_logout"
+            android:text="Logout"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".NoteFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Transaksi"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/aestheticromance"
+        android:textStyle="bold"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Pesanan"
+        android:layout_marginTop="150dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/Pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesanan"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/aestheticromance"/>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".CabeActivity">
+
+    <ImageButton
+        android:id="@+id/btnback"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:elevation="1dp"
+        android:src="@drawable/back"
+        android:background="@color/transparant"
+        android:onClick="backToMainActivity"/>
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/sambal0"
+        android:elevation="1dp" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/coklat_muda"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:elevation="2dp"
+            android:layout_marginTop="275dp"
+            android:orientation="horizontal"
+            android:background="@drawable/searchview_bg">
+
+            <Button
+                android:id="@+id/btnMinus"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:background="@color/transparant"
+                android:text="-"
+                android:onClick="decrementCount"/>
+
+            <TextView
+                android:id="@+id/angka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:textSize="20dp"
+                android:text="0"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@color/transparant"
+                android:text="+"
+                android:onClick="incrementCount" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAMBEL KEMPLANG"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/aestheticromance"/>
+
+        <View
+            android:layout_width="325dp"
+            android:layout_gravity="center"
+            android:layout_height="2dp"
+            android:layout_marginTop="15dp"
+            android:background="#888888"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Sambel kemplang pelengkap saat menyantap kemplang"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/aestheticromance"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="100dp"
+            android:textSize="20dp"
+            android:text="Size"/>
+
+        <RadioGroup
+            android:id="@+id/kemasanRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <RadioButton
+                android:id="@+id/radio250gr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 ons"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aestheticromance"/>
+
+            <RadioButton
+                android:id="@+id/radio500gr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2,5 ons"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aestheticromance"/>
+
+            <RadioButton
+                android:id="@+id/radio1kg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 ons"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aestheticromance"/>
+
+        </RadioGroup>
+        <RelativeLayout
+            android:id="@+id/priceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/searchview_bg">
+
+            <TextView
+                android:id="@+id/priceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:text="Harga"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:fontFamily="@font/aestheticromance"/>
+
+            <TextView
+                android:id="@+id/totalharga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:layout_marginStart="50dp"
+                android:layout_below="@+id/priceLabel"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/addToCartButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/tombol"
+                android:layout_marginStart="200dp"
+                android:text="Tambahkan ke Keranjang"
+                android:onClick="addToCart"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

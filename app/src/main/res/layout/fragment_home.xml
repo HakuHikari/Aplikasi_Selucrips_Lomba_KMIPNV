@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/profil"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/akun"
+            android:background="@color/transparant"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="openProfileActivity"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_alignTop="@id/profil"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/logont" />
+
+        <TextView
+            android:id="@+id/tvHiUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_below="@+id/logoImageView"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/aestheticromance"/>
+
+        <TextView
+            android:id="@+id/tvKemplangSeluangLemak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kemplang Seluang Lemak Nian"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_below="@+id/tvHiUsername"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/aestheticromance"/>
+
+        <!-- Add the gray container with the address -->
+        <LinearLayout
+            android:id="@+id/grayContainer"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/tvKemplangSeluangLemak"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/searchview_bg">
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:text="Jl. Kol. Wahid Udin, Serasan Jaya,Kec. Sekayu, Kabupaten Musi Banyuasin, Sumatera Selatan 30711"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:fontFamily="@font/aestheticromance"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/kategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:layout_below="@+id/grayContainer"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/aestheticromance"/>
+
+        <ImageButton
+            android:id="@+id/btnkemplang"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/kategori"
+            android:scaleType="fitXY"
+            android:background="@color/transparant"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/kemplango"
+            android:layout_marginTop="16dp" />
+
+        <ImageButton
+            android:id="@+id/btnmentah"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/btnkemplang"
+            android:layout_below="@id/kategori"
+            android:scaleType="fitXY"
+            android:background="@color/transparant"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/mentah0"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp" />
+
+        <ImageButton
+            android:id="@+id/btnbhnmentah"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/btnmentah"
+            android:layout_below="@id/kategori"
+            android:scaleType="fitXY"
+            android:background="@color/transparant"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/bhnmentah0"
+            android:layout_marginTop="16dp" />
+
+        <!-- Image Buttons in the bottom row -->
+        <ImageButton
+            android:id="@+id/btngiling"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:background="@color/transparant"
+            android:layout_below="@id/btnkemplang"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/giling0"
+            android:layout_marginTop="75dp" />
+
+        <ImageButton
+            android:id="@+id/btncabe"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/btngiling"
+            android:layout_below="@id/btnmentah"
+            android:scaleType="fitXY"
+            android:background="@color/transparant"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/sambal0"
+            android:layout_marginTop="75dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kemplang"
+            android:layout_below="@+id/btnkemplang"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/aestheticromance"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seluang"
+            android:layout_below="@+id/btnkemplang"
+            android:textColor="@color/black"
+            android:layout_marginTop="35dp"
+            android:textSize="25dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/aestheticromance"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kemplang"
+            android:layout_below="@+id/btnkemplang"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            android:layout_marginStart="140dp"
+            android:fontFamily="@font/aestheticromance"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentah"
+            android:layout_below="@+id/btnkemplang"
+            android:textColor="@color/black"
+            android:layout_marginTop="35dp"
+            android:textSize="25dp"
+            android:layout_marginStart="150dp"
+            android:fontFamily="@font/aestheticromance"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahan"
+            android:layout_below="@+id/btnkemplang"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            android:layout_marginStart="279dp"
+            android:fontFamily="@font/aestheticromance"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentah"
+            android:layout_below="@+id/btnkemplang"
+            android:textColor="@color/black"
+            android:layout_marginTop="35dp"
+            android:textSize="25dp"
+            android:layout_marginStart="275dp"
+            android:fontFamily="@font/aestheticromance"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ikan"
+            android:layout_below="@+id/btngiling"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            android:layout_marginStart="79dp"
+            android:fontFamily="@font/aestheticromance"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giling"
+            android:layout_below="@+id/btngiling"
+            android:textColor="@color/black"
+            android:layout_marginTop="35dp"
+            android:textSize="25dp"
+            android:layout_marginStart="75dp"
+            android:fontFamily="@font/aestheticromance"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sambal"
+            android:layout_below="@+id/btngiling"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            android:layout_marginStart="225dp"
+            android:fontFamily="@font/aestheticromance"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kemplang"
+            android:layout_below="@+id/btngiling"
+            android:textColor="@color/black"
+            android:layout_marginTop="35dp"
+            android:textSize="25dp"
+            android:layout_marginStart="215dp"
+            android:fontFamily="@font/aestheticromance"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

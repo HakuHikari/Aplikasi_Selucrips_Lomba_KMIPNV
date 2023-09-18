@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".PembayaranActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/transparant"/>
+
+    <TextView
+        android:id="@+id/masukanalamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan Alamat"
+        android:textColor="@color/black"
+        android:fontFamily="@font/aestheticromance"
+        android:layout_marginTop="20dp"
+        android:textSize="50sp"
+        android:layout_marginStart="50dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/whiteContainer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/masukanalamat"
+            android:background="@color/white"
+            android:layout_marginTop="10dp">
+
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    <TextView
+        android:id="@+id/namalengkap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:layout_below="@+id/whiteContainer"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/txnamalengkap"
+        android:hint="Masukan Nama Lengkap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/namalengkap"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/black"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat Lengkap"
+        android:layout_below="@+id/txnamalengkap"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txalamat"
+        android:hint="contoh : jln.x no.123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/alamat"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/black"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/kelurahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelurahan"
+        android:layout_below="@+id/txalamat"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txkelurahan"
+        android:hint="Masukan Kelurahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/kelurahan"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/black"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/kota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Kecamatan / kota"
+        android:layout_below="@+id/txkelurahan"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txkota"
+        android:hint="Masukan Kecamatan/Kota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/kota"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/black"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/kodepos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="No hp"
+        android:layout_below="@+id/txkota"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txkodepos"
+        android:hint="Nomor HP"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kodepos"
+        android:backgroundTint="@color/black"
+        android:inputType="number"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/totalharga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Total Harga"
+            android:textColor="@color/black"
+            android:layout_below="@+id/atasNama"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/totalhargaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="rp. 0,00"
+            android:textColor="@color/black"
+            android:layout_below="@+id/totalharga"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/BuktiTransaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukan Bukti Transaksi"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/totalhargaTextView"
+            />
+
+        <TextView
+            android:id="@+id/transferRekening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silahkan Transfer ke No Rekening"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_below="@+id/txkodepos"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/noRekening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mandiri 1104 0101 3327 503"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_below="@+id/transferRekening"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/atasNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atas Nama Supriati"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_below="@+id/noRekening"
+
+            android:layout_marginStart="20dp"/>
+
+        <ImageButton
+            android:id="@+id/imgUploadFoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/upload"
+            android:layout_below="@+id/BuktiTransaksi"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/transparant"
+            android:onClick="onSelectImageClicked"
+            android:scaleType="fitXY"/>
+
+        <Button
+            android:id="@+id/addToPesanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgUploadFoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/tombol"
+            android:onClick="addToCart"
+            android:text="Kirim" />
+
+
+
+</RelativeLayout>
+
+</ScrollView>
